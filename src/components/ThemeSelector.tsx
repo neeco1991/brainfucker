@@ -1,4 +1,4 @@
-import { createSignal, onMount } from 'solid-js';
+import { createEffect } from 'solid-js';
 import { createStoredSignal } from '../hooks/createStoredSignal';
 
 export default function ThemeSelector() {
@@ -6,6 +6,12 @@ export default function ThemeSelector() {
     'theme',
     window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
   );
+
+  createEffect(() => {
+    if (theme() === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+  });
 
   const toggle = (e: MouseEvent) => {
     e.preventDefault();
@@ -21,11 +27,15 @@ export default function ThemeSelector() {
   };
 
   return (
-    <button onClick={(e) => toggle(e)}>
+    <button
+      onClick={(e) => toggle(e)}
+      aria-label="Theme"
+      class="rounded-full p-1 hover:bg-gray-200 dark:hover:bg-gray-600 hover:ring-1 hover:ring-slate-400"
+    >
       {theme() === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="white"
+          fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
