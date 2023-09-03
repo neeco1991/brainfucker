@@ -4,9 +4,12 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      // fontFamily: {
-      //   bf: ['Avenuex'],
-      // },
+      colors: {
+        ez: '#66C863',
+        moderate: '#FFC100',
+        intense: '#FF8200',
+        brainfucker: '#FF0000',
+      },
     },
   },
   plugins: [],

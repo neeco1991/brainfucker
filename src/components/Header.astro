@@ -1,16 +1,24 @@
 ---
-import ThemeSelector from './ThemeSelector';
+import LanguageSelector from './LanguageSelector.tsx';
+import ThemeSelector from './ThemeSelector.tsx';
 ---
 
-<div class="relative">
-  <h1 class="text-3xl font-bold tracking-tight sm:text-8xl text-red-500">
-    Brainfucker
-  </h1>
+<div class="sm:relative">
+  <a href="/">
+    <h1
+      class="text-3xl font-bold tracking-tight sm:text-8xl text-red-500 select-none"
+    >
+      Brainfucker
+    </h1>
+  </a>
   <!-- <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
     Just people stories
   </p> -->
-  <div class="absolute top-0 right-0">
+  <div
+    class="absolute top-4 right-2 sm:top-0 sm:right-0 flex flex-col items-center gap-2"
+  >
     <ThemeSelector client:only />
+    <LanguageSelector client:load />
   </div>
 </div>
 

@@ -1,5 +1,5 @@
 import { createEffect } from 'solid-js';
-import { createStoredSignal } from '../hooks/createStoredSignal';
+import { createStoredSignal } from '../lib/hooks/createStoredSignal';
 
 export default function ThemeSelector() {
   const [theme, setTheme] = createStoredSignal<'dark' | 'light'>(
@@ -35,7 +35,6 @@ export default function ThemeSelector() {
       {theme() === 'dark' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"
@@ -50,7 +49,6 @@ export default function ThemeSelector() {
       ) : (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="black"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="currentColor"

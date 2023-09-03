@@ -12,7 +12,7 @@ const { title } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -27,5 +27,10 @@ const { title } = Astro.props;
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+  }
+
+  .filter-white {
+    filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(248deg)
+      brightness(106%) contrast(106%);
   }
 </style>

@@ -1,0 +1,17 @@
+---
+import Main from '../../layouts/Main.astro';
+import { supportedLanguages } from '../../lib/lang';
+import { getCollection } from 'astro:content';
+import wall from '../../assets/img/wall.svg';
+
+export function getStaticPaths() {
+  return supportedLanguages.map(({ id }) => ({ params: { lang: id } }));
+}
+
+const allRiddles = await getCollection('riddles');
+console.log(allRiddles);
+---
+
+<Main>
+  <img src={wall.src} class="dark:invert" />
+</Main>
