@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import Main from '../../layouts/Main.astro';
+import { Image } from 'astro:assets';
+
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const riddles = await getCollection('riddles');
+  return riddles.map((riddle) => ({
+    params: { riddle: riddle.slug, lang: riddle.data.lang },
+    props: { riddle },
+  }));
+}
+// 2. For your template, you can get the riddle directly from the prop
+const { riddle } = Astro.props;
+const { Content } = await riddle.render();
+---
+
+<Main>
+  <h1>{riddle.data.title}</h1>
+  <Image
+    src={riddle.data.image}
+    width={400}
+    height={400}
+    alt="riddle image"
+    class="dark:invert w-full"
+  />
+  <Content />
+</Main>
