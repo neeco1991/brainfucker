@@ -20,7 +20,7 @@ const { title } = Astro.props;
   </head>
 
   <ViewTransitions />
-  <body>
+  <body class="overflow-y-scroll">
     <slot />
   </body>
 
@@ -31,6 +31,33 @@ const { title } = Astro.props;
       font-weight: normal;
       font-style: normal;
       font-display: swap;
+    }
+
+    /* Make the scrollbar always visible */
+    ::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888; /* Color of the handle */
+      border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; /* Color of the handle when hovered */
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Color of the track */
+    }
+
+    /* Remove default track in Firefox */
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f1f1f1;
     }
   </style>
 </html>

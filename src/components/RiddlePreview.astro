@@ -9,7 +9,7 @@ const riddle = await getEntry('riddles', slug);
 const { Content } = await riddle!.render();
 ---
 
-<a href={`${riddle?.data.lang}/${riddle?.slug}`}>
+<a href={`/${riddle?.data.lang}/${riddle?.slug}`}>
   <article
     class="hover:bg-gray-100 dark:hover:bg-gray-950 rounded-xl border border-gray-200 dark:border-gray-800"
   >
