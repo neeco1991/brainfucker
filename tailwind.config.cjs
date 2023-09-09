@@ -10,6 +10,9 @@ module.exports = {
         intense: '#FF8200',
         brainfucker: '#FF0000',
       },
+      fontFamily: {
+        rubik: ['Rubik'],
+      },
     },
   },
   plugins: [],

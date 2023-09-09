@@ -1,17 +1,23 @@
 ---
 import Main from '../../layouts/Main.astro';
 import { supportedLanguages } from '../../lib/lang';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import wall from '../../assets/img/wall.svg';
+import RiddlePreview from '../../components/RiddlePreview.astro';
 
 export function getStaticPaths() {
   return supportedLanguages.map(({ id }) => ({ params: { lang: id } }));
 }
 
-const allRiddles = await getCollection('riddles');
-console.log(allRiddles);
+const { lang } = Astro.params;
+
+const allRiddles = (await getCollection('riddles')).filter(
+  (riddle) => riddle.data.lang === lang
+);
 ---
 
 <Main>
-  <img src={wall.src} class="dark:invert" />
+  <div class="space-y-12 flex flex-col">
+    {allRiddles.map((riddle) => <RiddlePreview slug={riddle.slug} />)}
+  </div>
 </Main>

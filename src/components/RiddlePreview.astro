@@ -1,0 +1,30 @@
+---
+import { getEntry } from 'astro:content';
+import { Image } from 'astro:assets';
+import DifficultyBadge from './DifficultyBadge.tsx';
+
+const { slug } = Astro.props;
+
+const riddle = await getEntry('riddles', slug);
+const { Content } = await riddle!.render();
+---
+
+<a href={`${riddle?.data.lang}/${riddle?.slug}`}>
+  <article
+    class="hover:bg-gray-100 dark:hover:bg-gray-950 rounded-xl border border-gray-200 dark:border-gray-800"
+  >
+    <div
+      class="flex justify-between items-start p-4 border-gray-200 dark:border-gray-800 border-b"
+    >
+      <h1 class="text-3xl">{riddle?.data.title}</h1>
+      <DifficultyBadge difficulty={riddle!.data.difficulty} />
+    </div>
+    <Image
+      src={riddle!.data.image}
+      width={400}
+      height={400}
+      alt={`${riddle!.data.title} cover`}
+      class="w-full dark:invert p-4"
+    />
+  </article>
+</a>
