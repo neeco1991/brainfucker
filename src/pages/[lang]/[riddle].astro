@@ -19,18 +19,24 @@ const { Content } = await riddle.render();
 
 <Main>
   <article>
-    <div class="flex justify-between items-start p-4">
-      <h1 class="text-3xl">{riddle?.data.title}</h1>
-      <DifficultyBadge difficulty={riddle!.data.difficulty} />
+    <div class="border border-transparent">
+      <div
+        class="flex justify-between items-start p-4 border-b border-transparent"
+      >
+        <h1 class="text-5xl font-bold">{riddle?.data.title}</h1>
+        <DifficultyBadge difficulty={riddle!.data.difficulty} />
+      </div>
+      <Image
+        src={riddle!.data.image}
+        width={400}
+        height={400}
+        alt={`${riddle!.data.title} cover`}
+        class="w-full p-4 dark:invert"
+      />
     </div>
-    <Image
-      src={riddle!.data.image}
-      width={400}
-      height={400}
-      alt={`${riddle!.data.title} cover`}
-      class="w-full dark:invert p-4"
-    />
-    <Content />
+    <div class="prose dark:invert mt-12">
+      <Content />
+    </div>
   </article>
 </Main>
 
