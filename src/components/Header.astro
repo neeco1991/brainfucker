@@ -1,10 +1,12 @@
 ---
 import LanguageSelector from './LanguageSelector.tsx';
 import ThemeSelector from './ThemeSelector.tsx';
+
+const { lang } = Astro.params;
 ---
 
 <div class="sm:relative">
-  <a href="/en">
+  <a href={`/${lang}`}>
     <h1
       class="text-3xl font-bold tracking-tight sm:text-8xl text-red-500 select-none"
     >

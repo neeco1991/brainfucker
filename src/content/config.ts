@@ -13,6 +13,8 @@ const riddlesCollection = defineCollection({
         supportedLanguages.map(({ id }) => id) as [string, ...string[]]
       ),
       image: image(),
+      hints: z.array(z.string()),
+      solution: z.string(),
     }),
 });
 // 3. Export a single `collections` object to register your collection(s)

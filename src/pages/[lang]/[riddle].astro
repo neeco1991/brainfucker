@@ -3,6 +3,8 @@ import { getCollection } from 'astro:content';
 import Main from '../../layouts/Main.astro';
 import { Image } from 'astro:assets';
 import DifficultyBadge from '../../components/DifficultyBadge';
+import Hints from '../../components/Hints';
+import Solution from '../../components/Solution';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -19,23 +21,32 @@ const { Content } = await riddle.render();
 
 <Main>
   <article>
-    <div class="border border-transparent">
+    <div class="sm:border border-transparent">
       <div
-        class="flex justify-between items-start p-4 border-b border-transparent"
+        class="sm:flex sm:justify-between sm:items-start sm:p-4 sm:border-b border-transparent"
       >
-        <h1 class="text-5xl font-bold">{riddle?.data.title}</h1>
-        <DifficultyBadge difficulty={riddle!.data.difficulty} />
+        <h1
+          class="text-5xl font-bold font-sans max-sm:mb-4 prose dark:prose-invert"
+        >
+          {riddle?.data.title}
+        </h1>
+        <div class="max-sm:my-4">
+          <DifficultyBadge difficulty={riddle!.data.difficulty} />
+        </div>
       </div>
       <Image
         src={riddle!.data.image}
         width={400}
         height={400}
         alt={`${riddle!.data.title} cover`}
-        class="w-full p-4 dark:invert"
+        class="w-full sm:p-4 dark:invert"
       />
     </div>
-    <div class="prose dark:invert mt-12">
+    <div class="prose dark:prose-invert mt-12 max-w-full sm:p-4">
       <Content />
+
+      <Hints hints={riddle!.hints} client:load />
+      <Solution solution={riddle.solution} client:load />
     </div>
   </article>
 </Main>
