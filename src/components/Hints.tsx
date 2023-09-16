@@ -1,11 +1,13 @@
 import { createSignal } from 'solid-js';
 
-type Props = string[];
+type Props = {
+  texts: string[];
+};
 
-export default function Hints(hints: Props) {
+export default function Hints({ texts }: Props) {
   const [clicks, setClicks] = createSignal<number>(0);
 
-  console.log(hints);
+  console.log(texts);
 
   return (
     <>

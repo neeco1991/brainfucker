@@ -45,8 +45,8 @@ const { Content } = await riddle.render();
     <div class="prose dark:prose-invert mt-12 max-w-full sm:p-4">
       <Content />
 
-      <Hints hints={riddle!.hints} client:load />
-      <Solution solution={riddle.solution} client:load />
+      <Hints texts={riddle!.hints} client:load />
+      <Solution text={riddle.solution} client:load />
     </div>
   </article>
 </Main>

@@ -1,6 +1,6 @@
 import { createSignal } from 'solid-js';
 
-export default function Solution(solution: string) {
+export default function Solution({ text }: { text: string }) {
   const [clicks, setClicks] = createSignal<number>(0);
 
   return (
