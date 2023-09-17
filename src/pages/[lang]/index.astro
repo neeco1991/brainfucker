@@ -1,8 +1,7 @@
 ---
 import Main from '../../layouts/Main.astro';
-import { supportedLanguages } from '../../lib/lang';
-import { getCollection, getEntry } from 'astro:content';
-import wall from '../../assets/img/wall.svg';
+import { supportedLanguages } from '../../lib/i18n';
+import { getCollection } from 'astro:content';
 import RiddlePreview from '../../components/RiddlePreview.astro';
 
 export function getStaticPaths() {

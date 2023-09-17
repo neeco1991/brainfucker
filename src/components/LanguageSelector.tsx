@@ -1,5 +1,5 @@
 import { createSignal, For } from 'solid-js';
-import { supportedLanguages } from '../lib/lang';
+import { supportedLanguages } from '../lib/i18n';
 
 export default function LanguageSelector() {
   const [open, setOpen] = createSignal<boolean>(false);

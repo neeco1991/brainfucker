@@ -51,13 +51,17 @@ const { title } = Astro.props;
 
     /* Track */
     ::-webkit-scrollbar-track {
-      background: #f1f1f1; /* Color of the track */
+      background: white; /* Color of the track */
+    }
+
+    .dark ::-webkit-scrollbar-track {
+      background-color: black; /* or any dark color */
     }
 
     /* Remove default track in Firefox */
     * {
       scrollbar-width: thin;
-      scrollbar-color: #888 #f1f1f1;
+      scrollbar-color: #888 transparent;
     }
   </style>
 </html>

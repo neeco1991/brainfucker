@@ -1,6 +1,6 @@
 // 1. Import utilities from `astro:content`
 import { z, defineCollection } from 'astro:content';
-import { supportedLanguages } from '../lib/lang';
+import { supportedLanguages } from '../lib/i18n';
 import { difficulties } from '../lib/difficulty';
 // 2. Define your collection(s)
 const riddlesCollection = defineCollection({

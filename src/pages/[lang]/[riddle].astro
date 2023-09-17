@@ -17,6 +17,7 @@ export async function getStaticPaths() {
 // 2. For your template, you can get the riddle directly from the prop
 const { riddle } = Astro.props;
 const { Content } = await riddle.render();
+const lang = Astro.params.lang as 'en' | 'it';
 ---
 
 <Main>
@@ -45,8 +46,8 @@ const { Content } = await riddle.render();
     <div class="prose dark:prose-invert mt-12 max-w-full sm:p-4">
       <Content />
 
-      <Hints texts={riddle!.data.hints} client:load />
-      <Solution text={riddle.data.solution} client:load />
+      <Hints texts={riddle!.data.hints} lang={lang} client:load />
+      <Solution text={riddle.data.solution} lang={lang} client:load />
     </div>
   </article>
 </Main>
