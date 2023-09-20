@@ -20,7 +20,7 @@ export const ui = {
     'hints.button.1': 'Sono sicuro',
     'hints.button.2': 'Altro suggerimento',
     'hints.button.3': 'Suggerimenti finiti',
-    'solution.title': 'Solutione',
+    'solution.title': 'Soluzione',
     'solution.warning': 'Sei sicuro di voler vedere la soluzione?',
     'solution.button.0': 'Rivela soluzione',
     'solution.button.1': 'Sono sicuro',
