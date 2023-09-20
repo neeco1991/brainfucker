@@ -1,8 +1,12 @@
 ---
+import { useTranslations } from '../lib/i18n';
 import LanguageSelector from './LanguageSelector.tsx';
 import ThemeSelector from './ThemeSelector.tsx';
 
 const { lang } = Astro.params;
+const t = useTranslations(lang as 'en' | 'it');
+
+const subtitle = t('header.subtitle');
 ---
 
 <div class="sm:relative">
@@ -13,9 +17,7 @@ const { lang } = Astro.params;
       Brainfucker
     </h1>
   </a>
-  <!-- <p class="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400">
-    Just people stories
-  </p> -->
+  <p class="mt-2 text-lg leading-8 prose dark:prose-invert">{subtitle}</p>
   <div
     class="absolute top-4 right-2 sm:top-0 sm:right-0 flex flex-col items-center gap-2"
   >

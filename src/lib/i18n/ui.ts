@@ -1,5 +1,6 @@
 export const ui = {
   en: {
+    'header.subtitle': 'Collection of Highly Logical Puzzles',
     'hints.title': 'Hints',
     'hints.warning':
       'Caution: Some hints may be extremely revealing and make the riddle easier. Click again if you are sure you want to proceed.',
@@ -13,6 +14,7 @@ export const ui = {
     'solution.button.1': 'I am sure',
   },
   it: {
+    'header.subtitle': 'Collezione di Indovinelli Logici',
     'hints.title': 'Suggerimenti',
     'hints.warning':
       "Attenzione: Alcuni suggerimenti possono essere estremamente illuminanti e rendere l'indovinello più facile. Clicca di nuovo se sei sicuro di voler procedere.",
