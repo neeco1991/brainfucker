@@ -1,6 +1,6 @@
 ---
 title: Il Mistero delle Monete Bifacciali
-difficulty: ez
+difficulty: moderate
 lang: it
 slug: monete
 image: ../../../assets/img/coins.svg

@@ -1,13 +1,13 @@
 ---
 title: La Camera dell'Enigma
-difficulty: ez
+difficulty: moderate
 lang: it
 slug: muro
 image: ../../../assets/img/wall.svg
 hints:
   [
-    "Prima che l'esploratore indovini, passa del tempo in cui nessuno dice niente",
-    "L'esploratore ad indovinare è il secondo da sinistra",
+    "Prima che l'esploratore indovini, passa del tempo in cui nessuno dice niente.",
+    "L'esploratore ad indovinare è il secondo da sinistra.",
   ]
 solution: 'I due avventurieri più vicini al muro non hanno nessuna informazione, perciò non potranno indovinare. Il primo a partire da sinistra vede due cappelli ma di colori opposti e quindi ha il 50% di probabilità di avere un cappello bianco e il 50% di averlo nero. Il secondo a partire da sinistra, invece, fa questo ragionamento: "Se io e quello davanti a me avessimo il cappello dello stesso colore, allora quello dietro di me indovinerebbe perché avrebbe la certezza del colore del suo cappello. Siccome quello dietro di me non sta indovinando, allora vuol dire che il mio cappello è del colore opposto di quello davanti a me."'
 ---
