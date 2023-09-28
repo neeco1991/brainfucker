@@ -1,5 +1,5 @@
 ---
-title: Il Castello degli Equilibri
+title: La bilancia infernale
 difficulty: brainfucker
 lang: it
 slug: biglie

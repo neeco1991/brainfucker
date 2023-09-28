@@ -1,5 +1,5 @@
 ---
-title: La Scala dell'Oracolo
+title: La scala dell'oracolo
 difficulty: intense
 lang: it
 slug: scala

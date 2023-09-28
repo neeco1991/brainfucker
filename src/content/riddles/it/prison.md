@@ -1,5 +1,5 @@
 ---
-title: La Prigione
+title: La prigione
 difficulty: brainfucker
 lang: it
 slug: prigione

@@ -1,5 +1,5 @@
 ---
-title: Il Mistero delle Monete Bifacciali
+title: Il mistero delle monete
 difficulty: moderate
 lang: it
 slug: monete

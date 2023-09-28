@@ -1,5 +1,5 @@
 ---
-title: La Camera dell'Enigma
+title: La camera murata
 difficulty: moderate
 lang: it
 slug: muro
