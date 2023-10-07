@@ -17,8 +17,19 @@ const riddlesCollection = defineCollection({
       solution: z.string(),
     }),
 });
+
+const pagesCollections = defineCollection({
+  type: 'content',
+  schema: z.object({
+    lang: z.enum(
+      supportedLanguages.map(({ id }) => id) as [string, ...string[]]
+    ),
+  }),
+});
+
 // 3. Export a single `collections` object to register your collection(s)
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   riddles: riddlesCollection,
+  pages: pagesCollections,
 };

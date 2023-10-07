@@ -1,10 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
-import Main from '../../layouts/Main.astro';
 import { Image } from 'astro:assets';
-import DifficultyBadge from '../../components/DifficultyBadge';
-import Hints from '../../components/Hints';
-import Solution from '../../components/Solution';
+import Main from '../../../layouts/Main.astro';
+import DifficultyBadge from '../../../components/DifficultyBadge';
+import Hints from '../../../components/Hints';
+import Solution from '../../../components/Solution';
 
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -14,6 +14,7 @@ export async function getStaticPaths() {
     props: { riddle },
   }));
 }
+
 // 2. For your template, you can get the riddle directly from the prop
 const { riddle } = Astro.props;
 const { Content } = await riddle.render();
@@ -51,9 +52,3 @@ const lang = Astro.params.lang as 'en' | 'it';
     </div>
   </article>
 </Main>
-
-<style>
-  h2 {
-    color: red;
-  }
-</style>

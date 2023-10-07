@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Main from '../../layouts/Main.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((page) => ({
+    params: { page: page.slug, lang: page.data.lang },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<Main>
+  <div class="prose dark:prose-invert max-w-full">
+    <Content />
+  </div>
+</Main>

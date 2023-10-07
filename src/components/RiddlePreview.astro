@@ -8,9 +8,9 @@ const { slug } = Astro.props;
 const riddle = await getEntry('riddles', slug);
 ---
 
-<a href={`/${riddle?.data.lang}/${riddle?.slug}`}>
+<a href={`/${riddle?.data.lang}/riddle/${riddle?.slug}`}>
   <article
-    class="hover:bg-gray-100 dark:hover:bg-gray-950 rounded-xl sm:border border-gray-200 dark:border-gray-800"
+    class="hover:bg-gray-100 dark:hover:bg-gray-950 sm:rounded-xl sm:border max-sm:border-b max-sm:pb-4 border-gray-200 dark:border-gray-800"
   >
     <div
       class="sm:flex sm:justify-between sm:items-start sm:p-4 border-gray-200 dark:border-gray-800 sm:border-b"
