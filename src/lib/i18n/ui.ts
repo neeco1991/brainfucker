@@ -13,7 +13,7 @@ export const ui = {
     'solution.button.0': 'Give me the solution',
     'solution.button.1': 'I am sure',
     'contribute.title': 'Contribute',
-    'contribute.slug': 'contribuisci',
+    'contribute.slug': 'contribute',
   },
   it: {
     'header.subtitle': 'Collezione di Indovinelli Logici',
