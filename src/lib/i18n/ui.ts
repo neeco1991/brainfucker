@@ -13,6 +13,7 @@ export const ui = {
     'solution.button.0': 'Give me the solution',
     'solution.button.1': 'I am sure',
     'contribute.title': 'Contribute',
+    'contribute.slug': 'contribuisci',
   },
   it: {
     'header.subtitle': 'Collezione di Indovinelli Logici',
@@ -28,7 +29,6 @@ export const ui = {
     'solution.button.0': 'Rivela soluzione',
     'solution.button.1': 'Sono sicuro',
     'contribute.title': 'Contribuisci',
-    'contribute.body':
-      'Brainfucker è un progetto gratis e open source. Se hai familiarità con git e il formato markdown, puoi',
+    'contribute.slug': 'contribuisci',
   },
 } as const;

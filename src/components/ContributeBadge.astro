@@ -1,0 +1,14 @@
+---
+import { useTranslations } from '../lib/i18n';
+
+const { lang } = Astro.params;
+
+const t = useTranslations(lang as 'en' | 'it');
+---
+
+<a
+  class="dark:invert inline-flex select-none text-lg font-rubik items-center rounded-md bg-gray-900/30 px-2 py-1 text-gray-900 ring-1 ring-inset ring-gray-900/20"
+  href=`/${lang}/${t('contribute.slug')}`
+>
+  {t('contribute.title')}
+</a>
