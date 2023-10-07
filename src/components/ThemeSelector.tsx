@@ -4,7 +4,8 @@ import { createStoredSignal } from '../lib/hooks/createStoredSignal';
 export default function ThemeSelector() {
   const [theme, setTheme] = createStoredSignal<'dark' | 'light'>(
     'theme',
-    window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    // window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    'dark'
   );
 
   createEffect(() => {
