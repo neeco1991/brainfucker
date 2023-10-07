@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Main from '../../layouts/Main.astro';
+export const prerender = true;
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
