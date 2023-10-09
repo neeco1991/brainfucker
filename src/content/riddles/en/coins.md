@@ -1,27 +1,27 @@
 ---
-title: The Mystery of the Coins
+title: The Magic Coins
 difficulty: moderate
 lang: en
 slug: coins
 image: ../../../assets/img/coins.svg
 hints: []
-solution: "The adventurers count 10 coins from one side of the table and form a group with them (Group X). The rest of the coins form the other group (Group Y). At this point, they flip all 10 coins of Group X. They don't need to know which face is up, they just flip them. In this way, the two groups will have the same number of coins with face B up."
+solution: 'The adventurer counts 10 coins from one side of the table and forms a group with them (Group X). The rest of the coins form the other group (Group Y). At this point, he flips all 10 coins of Group X. The adventurer doesn’t need to know which side is facing up (nor the starting situation): he simply flips them. In this way, both groups will have the same number of coins with the amethyst side facing up.'
 ---
 
 ## Prologue
 
-In an underground kingdom, hidden in the folds of time, a mysterious entity known as the Guardian of Fate possesses a treasure made up of 500 magical coins. These coins, each with two differently colored faces, are the source of the Guardian's power and the secret to his immortality. Legend has it that anyone able to unravel the mystery of the coins can gain knowledge and powers beyond imagination.
+In a distant kingdom, hidden in the folds of time, an underground Being, ancient as fire and stone, guards its treasure: five hundred coins forged by the skilled hands of the dwarves, great metal craftsmen for all the millennia they lived in the darkness of the earth. In the forge of the volcanoes, where weapons were made in the times of heroes and tools in the times of peace, these five hundred coins took shape, each one with an amethyst face and a face of pure gold.
 
 ## Description
 
-The 500 coins are laid out on a large ancient table. Out of these, 490 have face A facing upwards, while 10 have face B facing upwards. The Guardian of Fate challenges the adventurers to solve the coin riddle. While blindfolded, the adventurers must divide the coins into two groups such that in each group there is the same number of coins with face B facing upwards.
+Rumors from afar tell that these coins have the power to grant their owner the knowledge of Time, and with it, the key to immortality. However, the daring minds that seek it must overcome a test of extraordinary cunning: four hundred ninety coins are laid with the golden face up, and only ten display the surface of amethyst, a precious stone known to be a symbol of clairvoyance.
 
 ## The Question
 
-How can the adventurers, while being blindfolded, divide the 500 coins into two groups such that in each group there is the same number of coins with face B facing up?
+The Being, the guardian of the coins, challenges adventurers to solve the riddle. Driven by courage or madness, the adventurers must, while blindfolded, divide the coins into two groups so that each group has the same number of coins with the amethyst face facing up. As soon as they have finished their partition, they will know if they deserve Eternal Wisdom or the everlasting oblivion that a wrong answer would plunge them into. How can an adventurer be sure to divide the coins into two groups, ensuring that both have the same number of coins displaying the amethyst side, especially when blindfolded?
 
 ## FAQ
 
-- The adventurers cannot in any way see the coins or perceive the colors of the faces while blindfolded.
+- The adventurers cannot in any way see the coins or perceive the colors or materials of the faces while they are blindfolded.
 - Adventurers can touch and move the coins, but they cannot distinguish the faces of the coins by touch.
 - There are no tricks or methods to see through the blindfold or to mark the coins in any way.

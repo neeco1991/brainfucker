@@ -10,3 +10,8 @@ Brainfucker è un progetto gratis e open source. Puoi contribuire aggiungendo nu
 Se hai familiarità con **git** e il formato **markdown**, puoi aprire una pull request sul [repository](https://github.com/neeco1991/brainfucker), aggiungere un indovinello è facile quanto creare un file **.md**.
 
 Altrimenti puoi inviare una mail all'indirizzo brainfkr23@gmail.com.
+
+### Ringraziamenti
+
+- Lucia Bresolin per le storie.
+- [excalidraw](https://excalidraw.com/) per i disegni.
